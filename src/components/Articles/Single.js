@@ -41,7 +41,7 @@ const ArticlesSingle = ({
         {!!article.content && (
           <Card>
             <CardItem header bordered>
-              <Text>Content</Text>
+              <Text>Contingut</Text>
             </CardItem>
             <CardItem>
               <Body>

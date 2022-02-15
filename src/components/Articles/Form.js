@@ -29,7 +29,7 @@ const ArticlesForm = ({
     <Container>
       <Content padder>
         <Header
-          title="Example form"
+          title="Formulari exemple"
           content="When you submit the form, it'll simply save to your redux store"
         />
 
@@ -43,7 +43,7 @@ const ArticlesForm = ({
             <Input
               type="text"
               autoCapitalize="none"
-              placeholder="james@doe.com"
+              placeholder="exemple@gmail.com"
               keyboardType="email-address"
               defaultValue={defaultValues.email || ''}
               onChangeText={(value) => setValue('email', value)}

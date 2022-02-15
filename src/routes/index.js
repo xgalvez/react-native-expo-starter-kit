@@ -7,8 +7,12 @@ import AppConfig from '../constants/config';
 import { ArticlesForm, ArticlesList, ArticlesSingle } from '../containers';
 
 import AboutComponent from '../components/About';
+import { Header } from 'react-native/Libraries/NewAppScreen';
 
 const Index = (
+
+
+
   <Stack hideNavBar>
     <Scene hideNavBar>
       <Tabs
@@ -21,7 +25,7 @@ const Index = (
         <Stack
           key="home"
           title={AppConfig.appName}
-          icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+          icon={() => <Icon name="play" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
           <Scene key="home" component={AboutComponent} />
@@ -48,6 +52,7 @@ const Index = (
       </Tabs>
     </Scene>
   </Stack>
+
 );
 
 export default Index;
